@@ -20,7 +20,7 @@ function reverse(str) {
 // function reverse(str) {
 //   let reversed = ''
 //   for( let character of str ){
-//     character = character + reversed
+//     reversed = character + reversed
 //   }
 //   return reversed
 // }
@@ -28,16 +28,25 @@ function reverse(str) {
 
 /////////////////// SOLUTION 3 ///////////////////
 
-function reverse(str) {
-  str.split('').reduce()
-}
-// Reduce is used to take all the different values in an array
-// & condense them all down to 1 singular value
-// So we want to take all the values within the array created
-// & condense them down to a single string
+// function reverse(str) {
+//   return str.split('').reduce((reversed, character) => character + reversed, '')
+// }
+
+// Reduce is used to take all the different values in an [array]
+// & condense them all down to 1️⃣ singular value
+// So we want to take all the values within the [array] created
+// & condense them down to a single 'string'
 
 // 💎Reduce💎
-// Takes 2 seperate values
-// The first is an ➡️ function
+// Takes 2️⃣ seperate values
+// The first arg is an ➡️ fxn
+// The second arg is an initial value
+// When reduce 🏃🏽‍♀️:
+// it's going to take the initial arg and pass it into the ➡️ fxn
+// & whatever gets returned as the starting arg for every successive run of the fxn
+// The fxn runs 1️⃣ time for every element in the [array]
+// Within the arrow fxn:
+// The first arg is what you are getting out of it (in this case the reversed 'string')
+// The second is what each element in the array represents
 
 module.exports = reverse;
