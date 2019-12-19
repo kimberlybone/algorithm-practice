@@ -16,6 +16,7 @@ function reverse(str) {
   // return str.split('').reverse().join('')
 }
 reverse('abcdef')
+
 /////////////////// SOLUTION 2 ///////////////////
 
 // function reverse(str) {
