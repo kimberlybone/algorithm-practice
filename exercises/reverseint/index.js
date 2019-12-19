@@ -8,6 +8,7 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
+///// SOLUTION 1 ///// 
 function reverseInt(n) {
   let reversed = n.toString().split('').reverse().join('')
   return parseInt(reversed) * Math.sign(n)
