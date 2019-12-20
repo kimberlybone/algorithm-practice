@@ -7,4 +7,7 @@
 
 function maxChar(str) {}
 
+// Turn the string into an {obj} where each letter is a key
+// and the # of times it appears is the value
+
 module.exports = maxChar;
