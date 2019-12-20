@@ -8,9 +8,10 @@
 function maxChar(str) {
   let obj = {}
   for( let char of str ){
-    obj[char] = 1
-    if( obj[char] ){
+    if( !obj[char] ){
+      obj[char] = 1
       debugger
+    } else {
       obj[char] += 1
     }
   }
