@@ -8,9 +8,13 @@
 function maxChar(str) {
   let obj = {}
   for( let char of str ){
-    debugger
     obj[char] = 1
+    if( obj[char] ){
+      debugger
+      obj[char] += 1
+    }
   }
+  return obj
 }
 
 maxChar('asddddf')
