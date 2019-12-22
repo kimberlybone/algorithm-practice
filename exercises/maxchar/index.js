@@ -5,6 +5,8 @@
 // maxChar("abcccccccd") === "c"
 // maxChar("apple 1231111") === "1"
 
+
+////// SOLUTION 1 //////
 function maxChar(str) {
   let max = 0
   let maxChar = ''
@@ -25,11 +27,16 @@ function maxChar(str) {
 
 }
 
+
+////// SOLUTION 2 //////
+
 // function maxChar(str) {
 //   let obj = {}
 //   chars[char] = chars[char] + 1 || 1
 //   return obj
 // }
+
+
 
 // Turn the string into an {obj} where each letter is a key
 // and the # of times it appears is the value
