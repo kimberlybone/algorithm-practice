@@ -13,7 +13,9 @@
 //   buzz
 
 
-////// SOLUTION 1 ////// 
+////// SOLUTION 1 //////
 function fizzBuzz(n) {}
+
+////// SOLUTION 2 ////// 
 
 module.exports = fizzBuzz;
