@@ -14,8 +14,12 @@
 
 
 ////// SOLUTION 1 //////
-function fizzBuzz(n) {}
+function fizzBuzz(n) {
 
-////// SOLUTION 2 ////// 
+}
+// This fxn is going to loop through every num between 1 and n to check
+// if it is divisible by a certain number
+
+////// SOLUTION 2 //////
 
 module.exports = fizzBuzz;
