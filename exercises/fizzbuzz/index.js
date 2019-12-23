@@ -14,8 +14,17 @@
 
 
 ////// SOLUTION 1 //////
-function fizzBuzz(n) {}
+function fizzBuzz(n) {
 
-////// SOLUTION 2 ////// 
+}
+// This fxn is going to *loop* (for loop) through every num between 1 and n to check:
+// if it is divisible by 3
+//  & if it is, it will return "fizz"
+// if it is divisble by 5
+//  & it will return "buzz"
+// if it is divisible by 3 && 5
+//  & it will return "fizzbuzz"
+
+////// SOLUTION 2 //////
 
 module.exports = fizzBuzz;
