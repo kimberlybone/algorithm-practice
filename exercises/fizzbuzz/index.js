@@ -26,6 +26,6 @@ function fizzBuzz(n) {
 // if it is divisible by 3 && 5
 //  & it will return "fizzbuzz"
 
-////// SOLUTION 2 //////
+/////// SOLUTION 2 ///////
 
 module.exports = fizzBuzz;
