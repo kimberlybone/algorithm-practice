@@ -13,7 +13,7 @@
 //   buzz
 
 
-////// SOLUTION 1 //////
+/////// SOLUTION 1 ///////
 
 function fizzBuzz(n) {
 
