@@ -14,6 +14,7 @@
 
 
 ////// SOLUTION 1 //////
+
 function fizzBuzz(n) {
 
 }
