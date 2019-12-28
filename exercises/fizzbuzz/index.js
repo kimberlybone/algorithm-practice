@@ -17,8 +17,8 @@
 
 function fizzBuzz(n) {
   for( let i = 1; i < n; i++ ){
-    debugger
     if( i % 3 === 0 ){
+      debugger
       console.log("fizz")
     } else if ( i % 5 === 0 ) {
       console.log("buzz")
@@ -36,6 +36,7 @@ fizzBuzz(20)
 //  & it will return "buzz"
 // if it is divisible by 3 && 5
 //  & it will return "fizzbuzz"
+// MODULO operator
 
 /////// SOLUTION 2 ///////
 
