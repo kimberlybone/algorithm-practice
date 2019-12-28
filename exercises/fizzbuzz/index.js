@@ -22,10 +22,9 @@ function fizzBuzz(n) {
     } else if ( i % 5 === 5 ) {
       console.log("buzz")
     } else if ( i % 3 === 3 && i % 5 === 5 ) {
-
+      console.log("fizzbuzz")
     }
   }
-
 }
 // This fxn is going to *loop* (for loop) through every num between 1 and n to check:
 // if it is divisible by 3
