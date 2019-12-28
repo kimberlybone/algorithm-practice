@@ -16,7 +16,7 @@
 /////// SOLUTION 1 ///////
 
 function fizzBuzz(n) {
-  for( let i = 1; i < n; i++ ){
+  for( let i = 1; i <= n; i++ ){
     if( i % 3 === 0 && i % 5 === 0 ){
       console.log("fizzbuzz")
     } else if ( i % 3 === 0 ) {
@@ -30,6 +30,23 @@ function fizzBuzz(n) {
   }
 }
 fizzBuzz(20)
+
+////// ALTERNATE SOLUTION //////
+
+// function fizzBuzz(n) {
+//   for( let i = 1; i <= n; i++ ){
+//     if( i % 15 === 0 ){
+//       console.log("fizzbuzz")
+//     } else if ( i % 3 === 0 ) {
+//       console.log("fizz")
+//       debugger
+//     } else if ( i % 5 === 0 ) {
+//       console.log("buzz")
+//     } else if (i){
+//       console.log(i)
+//     }
+//   }
+// }
 
 // This fxn is going to *loop* (for loop) through every num between 1 and n to check:
 // if it is divisible by 3
