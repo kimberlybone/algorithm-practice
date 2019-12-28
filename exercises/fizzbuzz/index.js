@@ -16,6 +16,13 @@
 /////// SOLUTION 1 ///////
 
 function fizzBuzz(n) {
+  for( let i = 1; i < n; i++ ){
+    if( i % 3 === 3 ){
+      console.log("fizz")
+    } else if ( i % 5 === 5 ) {
+      console.log("buzz")
+    }
+  }
 
 }
 // This fxn is going to *loop* (for loop) through every num between 1 and n to check:
