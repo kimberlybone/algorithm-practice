@@ -17,15 +17,18 @@
 
 function fizzBuzz(n) {
   for( let i = 1; i < n; i++ ){
-    if( i % 3 === 3 ){
+    debugger
+    if( i % 3 === 0 ){
       console.log("fizz")
-    } else if ( i % 5 === 5 ) {
+    } else if ( i % 5 === 0 ) {
       console.log("buzz")
-    } else if ( i % 3 === 3 && i % 5 === 5 ) {
+    } else if ( i % 3 === 0 && i % 5 === 0 ) {
       console.log("fizzbuzz")
     }
   }
 }
+fizzBuzz(20)
+
 // This fxn is going to *loop* (for loop) through every num between 1 and n to check:
 // if it is divisible by 3
 //  & if it is, it will return "fizz"
