@@ -13,6 +13,7 @@ function chunk(array, size) {
 }
 // NOTES //
 // take the second argument (the size) and
-// loop through the array to make a new array
-// 
+// loop through the array to make a new array insid of the existing array
+// the new array
+
 module.exports = chunk;
