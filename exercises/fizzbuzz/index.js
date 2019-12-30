@@ -51,6 +51,5 @@ fizzBuzz(20)
 //  & it will return "fizzbuzz"
 // MODULO operator
 
-/////// SOLUTION 2 ///////
 
 module.exports = fizzBuzz;
