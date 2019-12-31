@@ -9,7 +9,9 @@
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
 function chunk(array, size) {
+  for( let i = 0; i < size; i ++ ){
 
+  }
 }
 // NOTES //
 // take the second argument (the size) and
