@@ -10,7 +10,9 @@
 
 function chunk(array, size) {
   for( let i = 0; i < size; i ++ ){
-    // create a new array 
+    // create a new array
+    // array.max = size
+    // array.push
   }
 }
 // NOTES //
