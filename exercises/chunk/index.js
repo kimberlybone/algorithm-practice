@@ -22,6 +22,6 @@ function chunk(array, size) {
 // loop through the array to make a new array insid of the existing array
 // the new array
 
-////// 2ND SOLUTION 
+////// 2ND SOLUTION //////
 
 module.exports = chunk;
