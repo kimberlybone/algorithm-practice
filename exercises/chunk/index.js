@@ -14,6 +14,7 @@ function chunk(array, size) {
     // array.max = size
     // array.push
   }
+  // return result
 }
 // NOTES //
 // take the second argument (the size) and
