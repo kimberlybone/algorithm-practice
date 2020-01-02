@@ -8,6 +8,7 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
+////// 1ST SOLUTION //////
 function chunk(array, size) {
   for( let i = 0; i < size; i ++ ){
     // create a new array
@@ -20,5 +21,7 @@ function chunk(array, size) {
 // take the second argument (the size) and
 // loop through the array to make a new array insid of the existing array
 // the new array
+
+////// 2ND SOLUTION 
 
 module.exports = chunk;
