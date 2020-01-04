@@ -30,7 +30,14 @@ function chunk(array, size) {
 
 ////// 2ND SOLUTION //////
 function chunk(array, size) {
-
+  const chunked = []
+  let index = 0
+  // using let bc it's a var we want to allow to change overtime
+  while ( index < array.length ){
+    chunked.push(array.slice(index, index + size))
+    index += size
+  }
+  return chunked
 }
 
 module.exports = chunk;
