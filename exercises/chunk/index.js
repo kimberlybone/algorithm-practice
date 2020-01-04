@@ -10,16 +10,18 @@
 
 ////// 1ST SOLUTION //////
 function chunk(array, size) {
-  let chunked = []
+  const chunked = []
   // chunked = create a new array to hold chunks
-  for( let i = 0; i < size; i ++ ){
-    // For each element in the "unchunked" array
-    // get last element in chunked array
-    // if the last element does not exist || if chunked.length === chunked.size
-    // array.max = size
-    // array.push
+  for( let element of array ){
+    const lastElem = chunked[chunked.length - 1]
+
+    if (!lastElem || chunked.length === size){
+      chunked.push([element])
+    } else {
+    lastElem.push(element)
+    }
   }
-  // return result
+  return chunked
 }
 // NOTES //
 // take the second argument (the size) and
