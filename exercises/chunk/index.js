@@ -10,8 +10,10 @@
 
 ////// 1ST SOLUTION //////
 function chunk(array, size) {
+  // chunked = create a new array to hold chunks
   for( let i = 0; i < size; i ++ ){
-    // create a new array to hold chunks
+    // For each element in the "unchunked" array
+    // get last element in
     // array.max = size
     // array.push
   }
