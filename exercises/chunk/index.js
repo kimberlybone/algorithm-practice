@@ -11,7 +11,7 @@
 ////// 1ST SOLUTION //////
 function chunk(array, size) {
   for( let i = 0; i < size; i ++ ){
-    // create a new array
+    // create a new array to hold chunks
     // array.max = size
     // array.push
   }
