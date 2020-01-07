@@ -11,7 +11,7 @@
 function anagrams(stringA, stringB) {
   const string1 = stringA.replace(/[^\w]/g, "").toLowerCase()
   const string2 = stringB.replace(/[^\w]/g, "").toLowerCase()
-  string1 === string2 ? true : false 
+  string1 === string2 ? true : false
 }
 // --- NOTES
 // use REGEX
@@ -22,7 +22,8 @@ function anagrams(stringA, stringB) {
 // Then we want to work with lowercase
 // so will have to use .toLowerCase() method
 // This replaces any spaces and exclamation marks that are found w an empty string
-// go through each character of stringA and stringB
+// make an array so can loop through each character of stringA and stringB
+// while looping, make a hash with the character as the key and the number of that character as the value
 //
 
 module.exports = anagrams;
