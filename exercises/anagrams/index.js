@@ -12,7 +12,12 @@ function anagrams(stringA, stringB) {
 
 }
 // --- NOTES
+// use REGEX
+// Ex: const word = "HI THERE!!"
+// can remove all the extra characters
+//  -> word.replace(/[^\w]/g, "")
+// This replaces any characters like that that are found w an empty string
 // go through each character of stringA and stringB
-// 
+//
 
 module.exports = anagrams;
