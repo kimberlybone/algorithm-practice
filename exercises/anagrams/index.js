@@ -9,16 +9,17 @@
 //   anagrams('Hi there', 'Bye there') --> False
 
 function anagrams( stringA, stringB ) {
-  const string1 = stringA.replace(/[^\w]/g, "").toLowerCase()
-  const string2 = stringB.replace(/[^\w]/g, "").toLowerCase()
-  string1 === string2 ? true : false
+  const charMapA = buildCharMap( stringA )
+  const charMapB = buildCharMap( stringB )
+  Object.keys( charMapA ).length === Object.keys( charMapB ).length ? true : false 
 }
 
 function buildCharMap( str ) {
   const charMap = {}
   for (let char of str.replace(/[^\w]/g, "").toLowerCase()){
-    
+    charMap[char] = charMap[char] + 1 || 1
   }
+  return charMap
 }
 // --- NOTES
 // use REGEX
