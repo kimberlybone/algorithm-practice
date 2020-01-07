@@ -8,12 +8,36 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
+////// 1ST SOLUTION //////
 function chunk(array, size) {
+  const chunked = []
+  // chunked = create a new array to hold chunks
+  for( let element of array ){
+    const lastElem = chunked[chunked.length - 1]
 
+    if (!lastElem || chunked.length === size){
+      chunked.push([element])
+    } else {
+    lastElem.push(element)
+    }
+  }
+  return chunked
 }
 // NOTES //
 // take the second argument (the size) and
-// loop through the array to make a new array insid of the existing array
+// loop through the array to make a new array inside of the existing array
 // the new array
+
+////// 2ND SOLUTION //////
+function chunk(array, size) {
+  const chunked = []
+  let index = 0
+  // using let bc it's a var we want to allow to change overtime
+  while ( index < array.length ){
+    chunked.push(array.slice(index, index + size))
+    index += size
+  }
+  return chunked
+}
 
 module.exports = chunk;
