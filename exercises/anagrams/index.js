@@ -8,13 +8,21 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {
+function anagrams( stringA, stringB ) {
   const string1 = stringA.replace(/[^\w]/g, "").toLowerCase()
   const string2 = stringB.replace(/[^\w]/g, "").toLowerCase()
   string1 === string2 ? true : false
 }
+
+function buildCharMap( str ) {
+  const charMap = {}
+  for (let char of str.replace(/[^\w]/g, "").toLowerCase()){
+    
+  }
+}
 // --- NOTES
 // use REGEX
+// build helper fxn
 // Ex: const word = "HI THERE!!"
 // can remove all the extra characters
 //  -> word.replace(/[^\w]/g, "")
@@ -22,7 +30,7 @@ function anagrams(stringA, stringB) {
 // Then we want to work with lowercase
 // so will have to use .toLowerCase() method
 // This replaces any spaces and exclamation marks that are found w an empty string
-// make an array so can loop through each character of stringA and stringB
+// make a hash so can loop through each character of stringA and stringB
 // while looping, make a hash with the character as the key and the number of that character as the value
 //
 
