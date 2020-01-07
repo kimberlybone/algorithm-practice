@@ -12,11 +12,16 @@ function anagrams( stringA, stringB ) {
   const charMapA = buildCharMap( stringA )
   const charMapB = buildCharMap( stringB )
 
-  Object.keys( charMapA ).length !== Object.keys( charMapB ).length ? false : true
-
-  for( let char in aCharMap ){
-    aCharMap[char] !== bCharMap[char] ? false : true
+  if( Object.keys( charMapA ).length !== Object.keys( charMapB ).length ){
+    return false
   }
+
+  for( let char in charMapA ){
+    if( charMapA[char] !== charMapB[char] ){
+      return false
+    }
+  }
+  return true
 }
 
 function buildCharMap( str ) {
