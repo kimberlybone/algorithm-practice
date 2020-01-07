@@ -9,14 +9,21 @@
 //   anagrams('Hi there', 'Bye there') --> False
 
 function anagrams(stringA, stringB) {
-
+  const string1 = stringA.replace(/[^\w]/g, "").toLowerCase()
+  const string2 = stringB.replace(/[^\w]/g, "").toLowerCase()
+  if ( string1 === string2 ){
+    
+  }
 }
 // --- NOTES
 // use REGEX
 // Ex: const word = "HI THERE!!"
 // can remove all the extra characters
 //  -> word.replace(/[^\w]/g, "")
-// This replaces any characters like that that are found w an empty string
+// This results to "HITHERE"
+// Then we want to work with lowercase
+// so will have to use .toLowerCase() method
+// This replaces any spaces and exclamation marks that are found w an empty string
 // go through each character of stringA and stringB
 //
 
