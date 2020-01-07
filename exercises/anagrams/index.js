@@ -11,9 +11,7 @@
 function anagrams(stringA, stringB) {
   const string1 = stringA.replace(/[^\w]/g, "").toLowerCase()
   const string2 = stringB.replace(/[^\w]/g, "").toLowerCase()
-  if ( string1 === string2 ){
-    
-  }
+  string1 === string2 ? true : false 
 }
 // --- NOTES
 // use REGEX
