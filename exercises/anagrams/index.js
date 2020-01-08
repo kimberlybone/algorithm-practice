@@ -8,6 +8,7 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
+////// SOLUTION 1 //////
 function anagrams( stringA, stringB ) {
   const charMapA = buildCharMap( stringA )
   const charMapB = buildCharMap( stringB )
@@ -43,6 +44,17 @@ function buildCharMap( str ) {
 // This replaces any spaces and exclamation marks that are found w an empty string
 // make a hash so can loop through each character of stringA and stringB
 // while looping, make a hash with the character as the key and the number of that character as the value
-//
+
+
+////// SOLUTION 2 //////
+function anagrams( stringA, stringB ) {
+
+}
+
+function buildCharMap( str ) {
+
+}
+// --- NOTES
+// sort can be used with characters as well
 
 module.exports = anagrams;
