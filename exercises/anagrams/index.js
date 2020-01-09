@@ -52,7 +52,7 @@ function anagrams( stringA, stringB ) {
 }
 
 function cleanStr( str ) {
-  return str.replace(/[^\w]g, '').toLowerCase().split('').sort().join('')
+  return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
 }
 // --- NOTES
 // sort can be used with characters as well
