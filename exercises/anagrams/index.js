@@ -9,29 +9,29 @@
 //   anagrams('Hi there', 'Bye there') --> False
 
 ////// SOLUTION 1 //////
-function anagrams( stringA, stringB ) {
-  const charMapA = buildCharMap( stringA )
-  const charMapB = buildCharMap( stringB )
-
-  if( Object.keys( charMapA ).length !== Object.keys( charMapB ).length ){
-    return false
-  }
-
-  for( let char in charMapA ){
-    if( charMapA[char] !== charMapB[char] ){
-      return false
-    }
-  }
-  return true
-}
-
-function buildCharMap( str ) {
-  const charMap = {}
-  for (let char of str.replace(/[^\w]/g, "").toLowerCase()){
-    charMap[char] = charMap[char] + 1 || 1
-  }
-  return charMap
-}
+// function anagrams( stringA, stringB ) {
+//   const charMapA = buildCharMap( stringA )
+//   const charMapB = buildCharMap( stringB )
+//
+//   if( Object.keys( charMapA ).length !== Object.keys( charMapB ).length ){
+//     return false
+//   }
+//
+//   for( let char in charMapA ){
+//     if( charMapA[char] !== charMapB[char] ){
+//       return false
+//     }
+//   }
+//   return true
+// }
+//
+// function buildCharMap( str ) {
+//   const charMap = {}
+//   for (let char of str.replace(/[^\w]/g, "").toLowerCase()){
+//     charMap[char] = charMap[char] + 1 || 1
+//   }
+//   return charMap
+// }
 // --- NOTES
 // use REGEX
 // build helper fxn
@@ -48,7 +48,7 @@ function buildCharMap( str ) {
 
 ////// SOLUTION 2 //////
 function anagrams( stringA, stringB ) {
-
+  return cleanStr(stringA) === cleanStr(stringB)
 }
 
 function cleanStr( str ) {
