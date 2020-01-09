@@ -9,10 +9,15 @@
 
 function capitalize(str) {
   let words = []
-  
+  str.split(' ')
+  for( let word of str ){
+    let newStr = word.toUpperCase().join('')
+    words.push( newStr )
+  }
+  return words
 }
 // --- NOTES
-// Make an empty array 'words'
+// Make empty array 'words'
 // Split the input str by spaces to get an array
 // For each word in the array
 // Uppercase the first letter of word
