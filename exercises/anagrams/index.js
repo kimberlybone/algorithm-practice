@@ -8,29 +8,30 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams( stringA, stringB ) {
-  const charMapA = buildCharMap( stringA )
-  const charMapB = buildCharMap( stringB )
-
-  if( Object.keys( charMapA ).length !== Object.keys( charMapB ).length ){
-    return false
-  }
-
-  for( let char in charMapA ){
-    if( charMapA[char] !== charMapB[char] ){
-      return false
-    }
-  }
-  return true
-}
-
-function buildCharMap( str ) {
-  const charMap = {}
-  for (let char of str.replace(/[^\w]/g, "").toLowerCase()){
-    charMap[char] = charMap[char] + 1 || 1
-  }
-  return charMap
-}
+////// SOLUTION 1 //////
+// function anagrams( stringA, stringB ) {
+//   const charMapA = buildCharMap( stringA )
+//   const charMapB = buildCharMap( stringB )
+//
+//   if( Object.keys( charMapA ).length !== Object.keys( charMapB ).length ){
+//     return false
+//   }
+//
+//   for( let char in charMapA ){
+//     if( charMapA[char] !== charMapB[char] ){
+//       return false
+//     }
+//   }
+//   return true
+// }
+//
+// function buildCharMap( str ) {
+//   const charMap = {}
+//   for (let char of str.replace(/[^\w]/g, "").toLowerCase()){
+//     charMap[char] = charMap[char] + 1 || 1
+//   }
+//   return charMap
+// }
 // --- NOTES
 // use REGEX
 // build helper fxn
@@ -43,6 +44,17 @@ function buildCharMap( str ) {
 // This replaces any spaces and exclamation marks that are found w an empty string
 // make a hash so can loop through each character of stringA and stringB
 // while looping, make a hash with the character as the key and the number of that character as the value
-//
+
+
+////// SOLUTION 2 //////
+function anagrams( stringA, stringB ) {
+  return cleanStr(stringA) === cleanStr(stringB)
+}
+
+function cleanStr( str ) {
+  return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
+}
+// --- NOTES
+// sort can be used with characters as well
 
 module.exports = anagrams;
