@@ -8,13 +8,13 @@
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
 function capitalize(str) {
-  let words = []
-  let splitStr = str.split(' ')
-  for( let word of splitStr ){
-    let newStr = word.toUpperCase()
+  const words = []
+
+  for( let word of str.split(' ') ){
+    let newStr = word[0].toUpperCase() + word.slice(1)
     words.push( newStr )
   }
-  return words.join('')
+  return words.join(' ')
 }
 // --- NOTES
 // Make empty array 'words'
