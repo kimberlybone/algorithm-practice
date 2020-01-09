@@ -51,8 +51,8 @@ function anagrams( stringA, stringB ) {
 
 }
 
-function buildCharMap( str ) {
-
+function cleanStr( str ) {
+  return str.replace(/[^\w]g, '').toLowerCase().split('').sort().join('')
 }
 // --- NOTES
 // sort can be used with characters as well
