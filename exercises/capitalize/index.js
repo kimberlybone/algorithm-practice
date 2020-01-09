@@ -9,12 +9,12 @@
 
 function capitalize(str) {
   let words = []
-  str.split(' ')
-  for( let word of str ){
-    let newStr = word.toUpperCase().join('')
+  let splitStr = str.split(' ')
+  for( let word of splitStr ){
+    let newStr = word.toUpperCase()
     words.push( newStr )
   }
-  return words
+  return words.join('')
 }
 // --- NOTES
 // Make empty array 'words'
