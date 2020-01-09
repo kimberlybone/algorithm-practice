@@ -7,6 +7,7 @@
 //   capitalize('a lazy fox') --> 'A Lazy Fox'
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
+////// SOLUTION 1 //////
 function capitalize(str) {
   const words = []
 
@@ -24,5 +25,7 @@ function capitalize(str) {
 // Join 1st letter w rest of the str
 // Push result into 'words' array
 // Join 'words' into a str and return it
+
+////// SOLUTION 2 //////
 
 module.exports = capitalize;
