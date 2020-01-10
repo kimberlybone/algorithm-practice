@@ -27,5 +27,24 @@ function capitalize(str) {
 // Join 'words' into a str and return it
 
 ////// SOLUTION 2 //////
+function capitalize(str) {
+  let result = str[0].toUpperCase()
+
+  for( let i = 1; i < str.length; i++ ){
+    if( str[ i - 1 ] === ' '){
+      result += str[i].toUpperCase()
+    } else {
+      result += str[i]
+    }
+  }
+  return result
+}
+// --- NOTES
+// Create variable that is set to the 1st char of the input str capitalized
+// For each char in string
+// If char to left of space
+// capitalize it and add it to the empty string
+// else
+// add it to the empty string
 
 module.exports = capitalize;
