@@ -28,13 +28,19 @@ function capitalize(str) {
 
 ////// SOLUTION 2 //////
 function capitalize(str) {
-  const words = []
+  const result = ''
 
-  for( let word of str.split(' ') ){
-    let newStr = word[0].toUpperCase() + word.slice(1)
-    words.push( newStr )
+  for( char of str ){
+    if(char)
   }
-  return words.join(' ')
+
 }
+// --NOTES
+// Create variable that is set to the 1st char of the input str capitalized
+// For each char in string
+// If char to left of space
+// capitalize it and add it to the empty string
+// else
+// add it to the empty string
 
 module.exports = capitalize;
