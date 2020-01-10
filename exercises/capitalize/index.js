@@ -27,5 +27,14 @@ function capitalize(str) {
 // Join 'words' into a str and return it
 
 ////// SOLUTION 2 //////
+function capitalize(str) {
+  const words = []
+
+  for( let word of str.split(' ') ){
+    let newStr = word[0].toUpperCase() + word.slice(1)
+    words.push( newStr )
+  }
+  return words.join(' ')
+}
 
 module.exports = capitalize;
