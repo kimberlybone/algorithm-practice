@@ -28,14 +28,18 @@ function capitalize(str) {
 
 ////// SOLUTION 2 //////
 function capitalize(str) {
-  const result = ''
+  let result = str[0].toUpperCase()
 
-  for( char of str ){
-    if(char)
+  for( let i = 1; i < str.length; i++ ){
+    if( str[ i - 1 ] === ' '){
+      result += str[i].toUpperCase()
+    } else {
+      result += str[i]
+    }
   }
-
+  return result
 }
-// --NOTES
+// --- NOTES
 // Create variable that is set to the 1st char of the input str capitalized
 // For each char in string
 // If char to left of space
