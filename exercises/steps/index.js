@@ -23,13 +23,13 @@ function steps(n) {
     let stair = ''
     for( let column = 0; column < n; column++ ){
       if( column <= row ){
-        stair += #
+        stair += '#'
       } else {
         stair += ' '
       }
     }
+    console.log(stair)
   }
-  console.log(stair)
 }
 // --- NOTES
 // From 0 to n
