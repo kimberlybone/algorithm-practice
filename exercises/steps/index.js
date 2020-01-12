@@ -19,10 +19,10 @@
 
 ////// SOLUTION 1 //////
 function steps(n) {
-  for( let i = 0; i < n; i++ ){
+  for( let row = 0; row < n; row++ ){
     let stair = ''
-    for( let x = 0; x < n; i++ ){
-      if( n <= ){
+    for( let column = 0; column < n; column++ ){
+      if( column <= row ){
         stair += #
       } else {
         stair += ' '
