@@ -19,17 +19,19 @@
 
 ////// SOLUTION 1 //////
 function steps(n) {
-
+  for( let i = 0; i < n; i++ ){
+    let stair = ''
+  }
 }
 // --- NOTES
 // From 0 to n
-// Creare an empty string
+// Create an empty string
 // From 0 to n
 // If the current column is <= the current row
 // Add a # to the empty string
 // else
 // add a space to the empty string
-// console log the resulting string 
+// console log the resulting string
 
 ////// SOLUTION 2 //////
 
