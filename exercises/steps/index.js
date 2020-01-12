@@ -17,6 +17,12 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+////// SOLUTION 1 //////
+function steps(n) {
+
+}
+// --- NOTES 
+
+////// SOLUTION 2 //////
 
 module.exports = steps;
