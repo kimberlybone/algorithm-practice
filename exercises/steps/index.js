@@ -21,7 +21,15 @@
 function steps(n) {
 
 }
-// --- NOTES 
+// --- NOTES
+// From 0 to n
+// Creare an empty string
+// From 0 to n
+// If the current column is <= the current row
+// Add a # to the empty string
+// else
+// add a space to the empty string
+// console log the resulting string 
 
 ////// SOLUTION 2 //////
 
