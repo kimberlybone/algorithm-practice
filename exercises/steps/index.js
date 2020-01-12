@@ -21,7 +21,15 @@
 function steps(n) {
   for( let i = 0; i < n; i++ ){
     let stair = ''
+    for( let x = 0; x < n; i++ ){
+      if( n <= ){
+        stair += #
+      } else {
+        stair += ' '
+      }
+    }
   }
+  console.log(stair)
 }
 // --- NOTES
 // From 0 to n
